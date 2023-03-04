@@ -1,0 +1,123 @@
+.header {
+    grid-area: header;
+    height: 150px;
+}
+
+.left {
+    grid-area: menu;
+    height: 120vh;
+}
+
+.right {
+    grid-area: right;
+    height: 120vh;
+}
+
+.grid-container {
+    display: grid;
+    height: 1000px;
+    grid-template-areas:
+        'header header header header header header'
+        'menu right right right right right'
+    ;
+    gap: 4px;
+    margin: 10px;
+    padding: 2px;
+}
+
+.grid-container div {
+    
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+div.header {
+    background-color: rgb(105, 105, 105);
+}
+
+div.left {
+    background-color: rgb(105, 105, 105);
+}
+
+.logo img {
+    float: left;
+    position: relative;
+    left: 10%;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    position: relative;
+    left: 15%;
+}
+
+.header a:hover
+{
+    color: blue;
+}
+
+div.home
+{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.box
+{
+    background-color: rgb(103, 103, 106);
+    border: 1px solid gray;
+    padding: 20px;
+    
+    font-size: 20px;
+    width: 1000px;
+    height: 70vh;
+    text-align: center;
+    position: absolute;
+    top: 240px;
+    right: 1000px;
+}
+
+.box img
+{
+    position: relative;
+    top: 10px;
+   
+    align-items: center;
+}
+
+.box h3
+{
+    color: white;
+    font-size: 80px;
+}
+.left ul li
+{
+    
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.left-content ul li
+{
+    
+    width: 120px;
+    cursor: pointer;
+    padding: 4px;
+    margin: 10px;
+    margin-left: 10px;
+}
+
+.left-content li:hover
+{
+   color: white;
+}
+
+.nested-ul ul li
+{
+    text-decoration: none;
+}
